@@ -57,6 +57,8 @@ const gameState = {
       double_resupplies: 50, //number of times player received both ammo and lives within 1 second
       sp_earned: 100, //special points earned
       sp_spent: 80, //special points used
+      last_down: 0, //timestamp player was put down or 0 if up
+      hit_points: 3, //current hit points
     },
   ],
 };
