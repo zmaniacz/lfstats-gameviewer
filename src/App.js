@@ -9,9 +9,10 @@ const client = new ApolloClient({
 });
 
 export default function App() {
+  let params = new URLSearchParams(window.location.search);
   return (
     <ApolloProvider client={client}>
-      <GameView />
+      <GameView game={params.get("game")} />
     </ApolloProvider>
   );
 }
